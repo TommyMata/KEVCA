@@ -1,18 +1,13 @@
 const CARDS = [
   {
-    num: '01',
-    title: 'Asesoría personalizada',
-    desc: 'Evaluamos su propiedad y diseñamos un sistema a la medida de sus necesidades y presupuesto.',
+    label: 'Misión',
+    title: 'Proteger con excelencia',
+    desc: 'Brindar soluciones integrales de seguridad electrónica a hogares y empresas en Costa Rica, instalando y manteniendo sistemas confiables con tecnología de punta y personal certificado, para garantizar la tranquilidad y protección de nuestros clientes en todo momento.',
   },
   {
-    num: '02',
-    title: 'Tecnología de punta',
-    desc: 'Trabajamos con las marcas líderes del mercado para garantizar la máxima calidad y durabilidad.',
-  },
-  {
-    num: '03',
-    title: 'Mantenimiento preventivo',
-    desc: 'Planes de mantenimiento programado para que sus sistemas funcionen siempre al máximo rendimiento.',
+    label: 'Visión',
+    title: 'Ser el referente en seguridad',
+    desc: 'Ser la empresa líder en seguridad electrónica en Costa Rica, reconocida por la excelencia en nuestros servicios, la innovación tecnológica y el compromiso con la protección de cada familia y negocio que deposita su confianza en nosotros.',
   },
 ]
 
@@ -21,14 +16,14 @@ export default function WhyUs() {
     <section className="why-us">
       <div className="container">
         <div className="why-us-header">
-          <span className="section-label reveal">¿Por qué elegirnos?</span>
-          <h2 className="reveal reveal-delay-1">Más que seguridad, tranquilidad</h2>
-          <p className="reveal reveal-delay-2">Cada proyecto es una promesa de protección que cumplimos con excelencia.</p>
+          <span className="section-label reveal">Misión &amp; Visión</span>
+          <h2 className="reveal reveal-delay-1">Nuestra filosofía de trabajo</h2>
+          <p className="reveal reveal-delay-2">Los principios que guían cada instalación y cada servicio que brindamos.</p>
         </div>
         <div className="why-grid">
           {CARDS.map((card, i) => (
-            <div key={card.num} className={`why-card reveal reveal-delay-${i + 1}`}>
-              <div className="why-number">{card.num}</div>
+            <div key={card.label} className={`why-card reveal reveal-delay-${i + 1}`}>
+              <div className="why-number">{card.label}</div>
               <h3>{card.title}</h3>
               <p>{card.desc}</p>
             </div>
