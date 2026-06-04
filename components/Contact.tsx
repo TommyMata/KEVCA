@@ -94,7 +94,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <strong>{CONTACT.location}</strong>
-                  <span>Cobertura en todo el GAM</span>
+                  <span>Cobertura en todo el país</span>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ export const WA_URL_DEFAULT = `${WA_URL}?text=Hola%2C%20me%20interesa%20informac
 export const CONTACT = {
   phonesDisplay: '8896-5181 / 7019-1614',
   email: 'seckevca@gmail.com',
-  location: 'Gran Área Metropolitana',
+  location: 'Costa Rica',
   facebook: 'https://www.facebook.com/kevcacr',
 }
 
