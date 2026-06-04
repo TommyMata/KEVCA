@@ -470,7 +470,7 @@ section { padding: 100px 0; }
 .why-us { background: var(--section-alt); }
 .why-us-header { text-align: center; max-width: 600px; margin: 0 auto 64px; }
 .why-us-header p { color: var(--text-secondary); margin-top: 16px; }
-.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .why-card {
   background: var(--dark-card);
   border: 1px solid var(--dark-card-border);
@@ -739,6 +739,7 @@ section { padding: 100px 0; }
 @media (max-width: 1024px) {
   .nav-links { gap: 20px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 48px; }
   .hero-shield { display: none; }
 

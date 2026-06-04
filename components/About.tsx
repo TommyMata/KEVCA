@@ -10,9 +10,12 @@ export default function About() {
           </div>
           <div className="about-content">
             <span className="section-label reveal">Sobre Nosotros</span>
-            <h2 className="reveal reveal-delay-1">Su socio estratégico en seguridad electrónica</h2>
+            <h2 className="reveal reveal-delay-1">Comprometidos con su protección y tranquilidad</h2>
             <p className="reveal reveal-delay-2">
-              En KEVCA Security Protection nos especializamos en brindar soluciones de seguridad confiables y tecnológicamente avanzadas. Nuestro equipo de profesionales certificados garantiza instalaciones de calidad y un servicio post-venta que nos distingue.
+              Ubicados en Cartago, Costa Rica, en KEVCA Security trabajamos con el compromiso de brindar protección, tranquilidad y tecnología de seguridad avanzada para hogares, negocios y empresas. Nacimos con el objetivo de ofrecer soluciones confiables que permitan a nuestros clientes sentirse seguros en todo momento.
+            </p>
+            <p className="reveal reveal-delay-2" style={{ marginBottom: '32px', color: 'var(--text-secondary)', fontSize: '1rem' }}>
+              Nos especializamos en instalación y mantenimiento de cámaras de seguridad, alarmas, cercas eléctricas, controles de acceso y sistemas inteligentes diseñados para proteger lo que más valoras. Nuestro equipo combina experiencia, innovación y atención personalizada para garantizar un servicio de calidad y confianza.
             </p>
             <div className="about-features reveal reveal-delay-3">
               <div className="about-feature">
@@ -29,8 +32,8 @@ export default function About() {
                   <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                 </div>
                 <div>
-                  <h4>Respuesta rápida</h4>
-                  <p>Atención en el menor tiempo posible</p>
+                  <h4>Atención personalizada</h4>
+                  <p>Soluciones adaptadas a cada cliente</p>
                 </div>
               </div>
               <div className="about-feature">
