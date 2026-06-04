@@ -1,17 +1,17 @@
 const CARDS = [
   {
-    label: 'Nuestra Visión',
-    title: 'Líderes en seguridad',
+    label: 'Visión',
+    title: 'Nuestra Visión',
     desc: 'Ser una empresa líder en seguridad y tecnología en Costa Rica, reconocida por nuestra excelencia, innovación y compromiso con la protección y tranquilidad de nuestros clientes, ofreciendo soluciones modernas y confiables para cada necesidad.',
   },
   {
-    label: 'Nuestra Misión',
-    title: 'Soluciones integrales',
+    label: 'Misión',
+    title: 'Nuestra Misión',
     desc: 'Brindar soluciones integrales de seguridad con tecnología avanzada, servicio profesional y atención personalizada, creando entornos más seguros para familias, hogares y empresas mediante sistemas eficientes y de alta calidad.',
   },
   {
-    label: 'Más que Seguridad',
-    title: 'Protegemos lo que más importa',
+    label: 'Valores',
+    title: 'Más que Seguridad',
     desc: 'En KEVCA Security creemos que la seguridad va más allá de instalar equipos; se trata de proteger sueños, familias y negocios. Nuestro propósito es brindar tranquilidad y confianza, acompañando a nuestros clientes cada día.',
   },
 ]
