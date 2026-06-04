@@ -29,20 +29,6 @@ export default function Hero() {
             </a>
             <a href="#servicios" className="btn-secondary">Ver Servicios</a>
           </div>
-          <div className="hero-stats reveal reveal-delay-4">
-            <div className="hero-stat">
-              <strong>10+</strong>
-              <span>Años de experiencia</span>
-            </div>
-            <div className="hero-stat">
-              <strong>500+</strong>
-              <span>Clientes protegidos</span>
-            </div>
-            <div className="hero-stat">
-              <strong>24/7</strong>
-              <span>Soporte técnico</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
