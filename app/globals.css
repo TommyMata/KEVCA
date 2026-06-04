@@ -661,15 +661,27 @@ section { padding: 100px 0; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
 /* --- Responsive --- */
+
+/* Tablet and below (≤1024px) */
 @media (max-width: 1024px) {
+  .nav-links { gap: 20px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 48px; }
+  .hero-shield { display: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
 
+/* Contact form inputs collapse before they get too cramped (≤900px) */
+@media (max-width: 900px) {
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 28px; }
+}
+
+/* Mobile and small tablets (≤768px) */
 @media (max-width: 768px) {
   section { padding: 72px 0; }
 
+  /* Nav */
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
@@ -694,37 +706,24 @@ section { padding: 100px 0; }
   /* Hero */
   .hero { padding: 100px 0 72px; }
   .hero-content { max-width: 100%; }
-  .hero-shield { display: none; }
   .hero p { font-size: 1rem; }
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary { width: 100%; justify-content: center; }
-  .hero-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-top: 40px;
-    padding-top: 28px;
-  }
-  .hero-stat strong { font-size: 1.5rem; }
-  .hero-stat span { font-size: 0.72rem; }
 
   /* Services */
-  .services-grid { grid-template-columns: 1fr; }
   .services-header { margin-bottom: 40px; }
 
   /* About */
   .about-grid { grid-template-columns: 1fr; }
-  .about-features { grid-template-columns: 1fr; }
 
-  /* Why Us */
-  .why-grid { grid-template-columns: 1fr; }
+  /* Why Us — 2 cols keeps cards readable on tablet portrait */
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
   .why-us-header { margin-bottom: 40px; }
 
   /* Contact */
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-form { padding: 24px; }
-  .form-row { grid-template-columns: 1fr; }
 
   /* Footer */
   .footer-grid {
@@ -739,4 +738,27 @@ section { padding: 100px 0; }
   .footer-links { align-items: center; }
   .footer-contact-item { justify-content: center; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
+
+/* Small phones — single column for cards (≤560px) */
+@media (max-width: 560px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .services-header { margin-bottom: 32px; }
+  .why-grid { grid-template-columns: 1fr; }
+  .about-features { grid-template-columns: 1fr; }
+}
+
+/* Extra-small phones — tighter spacing (≤480px) */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  section { padding: 56px 0; }
+  .hero { padding: 88px 0 56px; }
+  .contact-form { padding: 20px 16px; }
+}
+
+/* Ultra-wide monitors (≥1920px) — expand content area */
+@media (min-width: 1920px) {
+  .container { max-width: 1440px; }
+  .hero-content { max-width: 800px; }
+  .hero p { max-width: 640px; }
 }
