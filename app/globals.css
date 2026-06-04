@@ -797,16 +797,9 @@ section { padding: 100px 0; }
 
   /* About */
   .about-grid { grid-template-columns: 1fr; }
-  .about-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .about-content .section-label,
+  .about-content { text-align: center; }
   .about-content h2,
-  .about-content > p { text-align: center; width: 100%; }
+  .about-content > p { text-align: center; }
   .about-features {
     display: flex;
     flex-direction: column;
