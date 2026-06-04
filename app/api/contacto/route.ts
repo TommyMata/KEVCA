@@ -20,7 +20,13 @@ export async function POST(request: NextRequest) {
       mensaje: mensaje?.trim() || undefined,
     }
 
-    await Promise.allSettled([saveLead(lead), sendContactEmail(lead)])
+    const [leadResult, emailResult] = await Promise.allSettled([
+      saveLead(lead),
+      sendContactEmail(lead),
+    ])
+
+    if (leadResult.status === 'rejected') console.error('Lead save failed:', leadResult.reason)
+    if (emailResult.status === 'rejected') console.error('Email send failed:', emailResult.reason)
 
     return NextResponse.json({ ok: true })
   } catch {

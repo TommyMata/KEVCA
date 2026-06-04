@@ -1,4 +1,4 @@
-const WA_URL = 'https://wa.me/50688965181?text=Hola%2C%20me%20interesa%20información%20sobre%20sus%20servicios%20de%20seguridad'
+import { WA_URL_DEFAULT as WA_URL } from '@/lib/constants'
 
 export default function WhatsAppFloat() {
   return (

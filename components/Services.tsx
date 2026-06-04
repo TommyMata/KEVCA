@@ -30,7 +30,8 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   ),
 }
 
-const DELAY_CLASSES = ['reveal-delay-1', 'reveal-delay-2', 'reveal-delay-3', 'reveal-delay-4']
+const DELAY_CLASSES = ['reveal-delay-1', 'reveal-delay-2', 'reveal-delay-3', 'reveal-delay-4'] as const
+const getDelay = (i: number) => DELAY_CLASSES[i % DELAY_CLASSES.length]
 
 export default function Services({ servicios }: { servicios: Servicio[] }) {
   return (
@@ -45,7 +46,7 @@ export default function Services({ servicios }: { servicios: Servicio[] }) {
         </div>
         <div className="services-grid">
           {servicios.map((s, i) => (
-            <div key={s.id} className={`service-card reveal ${DELAY_CLASSES[i] ?? ''}`}>
+            <div key={s.id} className={`service-card reveal ${getDelay(i)}`}>
               <div className="service-icon">
                 {ICON_MAP[s.icono] ?? ICON_MAP.sensor}
               </div>

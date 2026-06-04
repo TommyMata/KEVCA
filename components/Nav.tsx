@@ -1,8 +1,7 @@
 'use client'
 import { useState, useEffect, useCallback } from 'react'
 
-const WA_NUMBER = '50688965181'
-const WA_URL = `https://wa.me/${WA_NUMBER}`
+import { WA_URL } from '@/lib/constants'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -27,7 +26,7 @@ export default function Nav() {
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="mainNav">
       <div className="nav-inner">
-        <a href="#inicio" className="nav-logo" onClick={(e) => handleNavClick(e, '#inicio')}>
+        <a href="/" className="nav-logo">
           <svg viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 2L4 12v16c0 14 10 22 20 26 10-4 20-12 20-26V12L24 2z" fill="#0C006E" stroke="#3b2fff" strokeWidth="1.2"/>
             <path d="M24 6L8 14.5v12.5c0 11.5 8 18 16 21.5 8-3.5 16-10 16-21.5V14.5L24 6z" fill="rgba(59,47,255,0.08)"/>
