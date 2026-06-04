@@ -62,14 +62,9 @@ export default function Contact() {
       <div className="container">
         <div className="contact-grid">
           <div className="contact-info">
-            <div>
-              <span className="section-label reveal">Contacto</span>
-              <h2 className="reveal reveal-delay-1">¿Listo para proteger lo que más importa?</h2>
-              <p className="reveal reveal-delay-2">
-                Contáctenos hoy para una evaluación gratuita de seguridad. Nuestro equipo está listo para atenderle.
-              </p>
-            </div>
-            <div className="contact-items reveal reveal-delay-3">
+            <span className="section-label reveal">Contáctenos</span>
+            <h2 className="reveal reveal-delay-1">Estamos aquí para ayudarle</h2>
+            <div className="contact-items reveal reveal-delay-2">
               <div className="contact-item">
                 <div className="contact-item-icon">
                   <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
@@ -100,7 +95,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className="contact-form reveal" onSubmit={handleSubmit}>
+          <form className="contact-form reveal reveal-delay-1" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="nombre">Nombre completo</label>
