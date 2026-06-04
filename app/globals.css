@@ -563,7 +563,7 @@ section { padding: 100px 0; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
 }

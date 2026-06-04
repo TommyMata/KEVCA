@@ -50,8 +50,7 @@ export default function Contact() {
       waMsg += ` Mi teléfono es: ${form.telefono}.`
 
       setTimeout(() => {
-        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMsg)}`, '_blank')
-        setSuccess(false)
+        window.location.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMsg)}`
       }, 1200)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Ocurrió un error. Intente de nuevo.')
