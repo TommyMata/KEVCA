@@ -563,7 +563,7 @@ section { padding: 100px 0; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
 }
@@ -668,7 +668,7 @@ section { padding: 100px 0; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 48px; }
   .hero-shield { display: none; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .footer-grid { gap: 36px; }
 }
 
 /* Contact form inputs collapse before they get too cramped (≤900px) */
