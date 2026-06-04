@@ -477,6 +477,7 @@ section { padding: 100px 0; }
   border-radius: var(--radius-lg);
   padding: 36px 28px;
   transition: var(--transition);
+  text-align: center;
 }
 .why-card:hover { border-color: rgba(59, 47, 255, 0.2); transform: translateY(-4px); }
 .why-number {
@@ -796,6 +797,24 @@ section { padding: 100px 0; }
 
   /* About */
   .about-grid { grid-template-columns: 1fr; }
+  .about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-content .section-label,
+  .about-content h2,
+  .about-content > p { text-align: center; width: 100%; }
+  .about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .about-feature { text-align: left; }
 
   /* Why Us */
   .why-grid { grid-template-columns: 1fr; }
@@ -804,6 +823,9 @@ section { padding: 100px 0; }
   /* Contact */
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-form { padding: 24px; }
+  .contact-info { align-items: center; text-align: center; }
+  .contact-items { width: fit-content; margin: 0 auto; }
+  .contact-item { text-align: left; }
 
   /* Footer */
   .footer-links { align-items: center; }
