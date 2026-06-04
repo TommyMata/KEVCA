@@ -9,7 +9,7 @@ export default function CTABanner() {
           <div className="cta-text">
             <h2 className="cta-title">¿Listo para proteger lo que más importa?</h2>
             <p className="cta-desc">
-              Solicita tu evaluación gratuita hoy. Nuestro equipo está listo para atenderte en todo Costa Rica.
+              Solicita tu evaluación gratuita hoy. Nuestro equipo está listo para atenderte.
             </p>
           </div>
           <div className="cta-actions">
