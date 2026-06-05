@@ -20,8 +20,8 @@ export default async function Home() {
       <main>
         <Hero />
         <Services servicios={servicios} />
-        <About />
         <WhyUs />
+        <About />
         <CTABanner />
         <Contact />
       </main>
