@@ -27,12 +27,8 @@ export default function Nav() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="mainNav">
       <div className="nav-inner">
         <a href="/" className="nav-logo">
-          <svg viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 2L4 12v16c0 14 10 22 20 26 10-4 20-12 20-26V12L24 2z" fill="#0C006E" stroke="#3b2fff" strokeWidth="1.2"/>
-            <path d="M24 6L8 14.5v12.5c0 11.5 8 18 16 21.5 8-3.5 16-10 16-21.5V14.5L24 6z" fill="rgba(59,47,255,0.08)"/>
-            <text x="24" y="36" textAnchor="middle" fontFamily="Helvetica Neue, Helvetica, Arial, sans-serif" fontWeight="800" fontSize="22" fill="white" letterSpacing="1">K</text>
-          </svg>
-          <div className="nav-logo-text">KEVCA<span>Security Protection</span></div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/brand/kevca-logo-dark.svg" alt="KEVCA Security Protection" className="nav-logo-img" />
         </a>
 
         <ul className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks">

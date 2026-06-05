@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 90" width="800" height="180">
+  <defs>
+    <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161630"></stop>
+      <stop offset="100%" stop-color="#0a0a1e"></stop>
+    </linearGradient>
+    <linearGradient id="shieldStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4fc3f7"></stop>
+      <stop offset="50%" stop-color="#3b2fff"></stop>
+      <stop offset="100%" stop-color="#0C006E"></stop>
+    </linearGradient>
+    <linearGradient id="caBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4fc3f7"></stop>
+      <stop offset="100%" stop-color="#0C006E"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 5)">
+    <path d="M36 2 L66 15 L66 42 C66 60 53 70 36 78 C19 70 6 60 6 42 L6 15 Z" fill="url(#shieldFill)" stroke="url(#shieldStroke)" stroke-width="2"></path>
+    <path d="M36 8 L61 19 L61 41 C61 56 50 65 36 72 C22 65 11 56 11 41 L11 19 Z" fill="none" stroke="rgba(59,47,255,0.25)" stroke-width="0.8"></path>
+    <text x="36" y="51" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="white">K</text>
+  </g>
+  <g transform="translate(92, 0)">
+    <text y="52" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="48" letter-spacing="2">
+      <tspan fill="white">KEV</tspan><tspan fill="url(#caBlue)">CA</tspan>
+    </text>
+    <line x1="4" y1="65" x2="38" y2="65" stroke="#4fc3f7" stroke-width="0.6" opacity="0.35"></line>
+    <text x="101" y="71" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="13" fill="rgba(79,195,247,0.6)" letter-spacing="7">SECURITY</text>
+    <line x1="164" y1="65" x2="198" y2="65" stroke="#4fc3f7" stroke-width="0.6" opacity="0.35"></line>
+  </g>
+</svg>

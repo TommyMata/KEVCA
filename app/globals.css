@@ -111,22 +111,17 @@ section { padding: 100px 0; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
-.nav-logo svg { height: 48px; width: auto; }
-.nav-logo-text {
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.nav-logo-text span {
+.nav-logo-img {
+  height: 44px;
+  width: auto;
   display: block;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: var(--text-secondary);
-  margin-top: -2px;
+}
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  margin: 0 auto 4px;
 }
 .nav-links {
   display: flex;
@@ -671,10 +666,9 @@ section { padding: 100px 0; }
   padding: 64px 0 0;
 }
 .footer-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
   padding-bottom: 48px;
   text-align: center;
 }
@@ -688,7 +682,6 @@ section { padding: 100px 0; }
   font-size: 0.88rem;
   margin-top: 16px;
   line-height: 1.7;
-  max-width: 300px;
 }
 .footer-social { display: flex; gap: 12px; margin-top: 20px; justify-content: center; }
 .footer-social a {
@@ -712,10 +705,26 @@ section { padding: 100px 0; }
   margin-bottom: 20px;
   color: var(--text-primary);
 }
-.footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .footer-links a { font-size: 0.85rem; color: var(--text-secondary); transition: var(--transition); }
 .footer-links a:hover { color: var(--blue-accent); }
 .footer-contact-item { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 14px; }
+
+/* Accordion — desktop: behaves like normal sections */
+.footer-accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: default;
+  padding: 0;
+  pointer-events: none;
+}
+.footer-accordion-chevron { display: none; }
+.footer-accordion-content { display: block; }
 .footer-contact-item svg {
   flex-shrink: 0;
   width: 16px;
@@ -786,7 +795,7 @@ section { padding: 100px 0; }
   .hero-shield { display: none; }
 
   /* Footer */
-  .footer .nav-logo { justify-content: center; }
+  .footer-grid { gap: 32px; }
 }
 
 /* Contact form inputs collapse before they get too cramped (≤900px) */
@@ -800,9 +809,7 @@ section { padding: 100px 0; }
   section { padding: 72px 0; }
 
   /* Nav — bigger logo and hamburger on mobile */
-  .nav-logo svg { height: 52px; }
-  .nav-logo-text { font-size: 1.3rem; }
-  .nav-logo-text span { font-size: 0.7rem; }
+  .nav-logo-img { height: 38px; }
   .nav-toggle { padding: 10px; }
   .nav-toggle span { width: 28px; height: 2.5px; }
 
@@ -864,8 +871,31 @@ section { padding: 100px 0; }
   .contact-item { text-align: left; }
 
   /* Footer */
-  .footer-links { align-items: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 0; }
+  .footer-brand { padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.06); }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+  /* Accordion active on mobile */
+  .footer-accordion { border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .footer-accordion-toggle {
+    justify-content: space-between;
+    cursor: pointer;
+    pointer-events: auto;
+    padding: 18px 0;
+  }
+  .footer-accordion-toggle h4 { margin-bottom: 0; }
+  .footer-accordion-chevron { display: block; color: var(--text-secondary); transition: transform 0.3s ease; }
+  .footer-accordion-chevron.open { transform: rotate(180deg); }
+  .footer-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0;
+  }
+  .footer-accordion-content.open {
+    max-height: 280px;
+    padding-bottom: 20px;
+  }
 }
 
 /* Small phones — single column for cards (≤560px) */
@@ -889,4 +919,10 @@ section { padding: 100px 0; }
   .container { max-width: 1440px; }
   .hero-content { max-width: 800px; }
   .hero p { max-width: 640px; }
+  .footer-grid { gap: 80px; }
+}
+
+/* Extra ultra-wide (≥2560px) */
+@media (min-width: 2560px) {
+  .container { max-width: 1600px; }
 }
