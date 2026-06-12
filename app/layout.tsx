@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     title: 'KEVCA Security Protection',
     description: 'Instalación profesional de sistemas de seguridad en Costa Rica.',
     type: 'website',
+    images: [{ width: 1200, height: 630, alt: 'KEVCA Security Protection' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KEVCA Security Protection',
+    description: 'Instalación profesional de sistemas de seguridad en Costa Rica.',
   },
 }
 
