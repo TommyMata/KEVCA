@@ -3,10 +3,9 @@ import { Servicio } from '@/types'
 const ICON_MAP: Record<string, React.ReactNode> = {
   alarm: (
     <svg viewBox="0 0 24 24">
-      <path d="M12 2a4 4 0 014 4v6a4 4 0 01-8 0V6a4 4 0 014-4z"/>
-      <path d="M18 10v2a6 6 0 01-12 0v-2"/>
-      <path d="M8 21h8"/>
-      <path d="M12 17v4"/>
+      <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+      <path d="M13.73 21a2 2 0 01-3.46 0"/>
+      <circle cx="12" cy="2" r="1"/>
     </svg>
   ),
   camera: (
@@ -23,9 +22,13 @@ const ICON_MAP: Record<string, React.ReactNode> = {
     </svg>
   ),
   sensor: (
-    <svg viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="3"/>
-      <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+      <path d="M4.93 4.93a10 10 0 0114.14 0"/>
+      <path d="M7.76 7.76a6 6 0 018.49 0"/>
+      <path d="M10.6 10.6a2 2 0 012.8 0"/>
+      <circle cx="12" cy="14" r="2" fill="currentColor" stroke="none"/>
+      <path d="M12 16v3"/>
+      <path d="M9 19h6"/>
     </svg>
   ),
 }

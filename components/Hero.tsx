@@ -15,14 +15,14 @@ export default function Hero() {
         <div className="hero-content">
           <span className="section-label reveal">KEVCA Security Protection</span>
           <h1 className="reveal reveal-delay-1">
-            Protegemos lo que <span className="accent">más importa</span>
+            Protegemos lo que <span className="accent">más te importa</span>
           </h1>
           <p className="reveal reveal-delay-2">
-            Instalación y mantenimiento profesional de sistemas de seguridad. Alarmas, cámaras CCTV, cercas perimetrales y sensores de última generación.
+            Instalación y mantenimiento profesional de sistemas de seguridad. Alarmas, cámaras CCTV, cercas perimetrales, sensores y mucho más.
           </p>
           <div className="hero-buttons reveal reveal-delay-3">
             <a href="#contacto" className="btn-primary">
-              Solicitar Cotización
+              Solicita Cotización Gratuita
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>

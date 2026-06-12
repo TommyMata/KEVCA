@@ -85,11 +85,11 @@ export default function Contact() {
               </div>
               <div className="contact-item">
                 <div className="contact-item-icon">
-                  <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </div>
                 <div>
-                  <strong>{CONTACT.location}</strong>
-                  <span>Cobertura en todo el país</span>
+                  <strong>Encuéntranos en Instagram</strong>
+                  <span>@kevcasecurity</span>
                 </div>
               </div>
             </div>

@@ -24,16 +24,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4>Profesionales certificados</h4>
-                  <p>Técnicos con experiencia comprobada</p>
-                </div>
-              </div>
-              <div className="about-feature">
-                <div className="about-feature-icon">
-                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                </div>
-                <div>
-                  <h4>Atención personalizada</h4>
-                  <p>Soluciones adaptadas a cada cliente</p>
+                  <p>+20 años de experiencia</p>
                 </div>
               </div>
               <div className="about-feature">
@@ -43,6 +34,15 @@ export default function About() {
                 <div>
                   <h4>Garantía en trabajos</h4>
                   <p>Respaldamos cada instalación</p>
+                </div>
+              </div>
+              <div className="about-feature">
+                <div className="about-feature-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <h4>Atención personalizada</h4>
+                  <p>Soluciones adaptadas a cada cliente</p>
                 </div>
               </div>
               <div className="about-feature">

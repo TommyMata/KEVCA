@@ -3,18 +3,15 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import Image from 'next/image'
 
 const IMAGES = [
-  { src: '/images/team/01.jpg', alt: 'Equipo KEVCA Security Protection' },
-  { src: '/images/team/02.jpg', alt: 'Instalación de cerca eléctrica' },
-  { src: '/images/team/03.jpg', alt: 'Instalación en campo' },
-  { src: '/images/team/04.jpg', alt: 'Sistema de seguridad' },
-  { src: '/images/team/05.jpg', alt: 'Instalación profesional' },
-  { src: '/images/team/06.jpg', alt: 'Trabajo en campo' },
-  { src: '/images/team/07.jpg', alt: 'Cerca eléctrica instalada' },
-  { src: '/images/team/08.jpg', alt: 'Cámara CCTV instalada' },
-  { src: '/images/team/09.jpg', alt: 'Sistema CCTV' },
-  { src: '/images/team/10.jpg', alt: 'Instalación de seguridad' },
-  { src: '/images/team/11.jpg', alt: 'Proyecto completado' },
-  { src: '/images/team/12.jpg', alt: 'Instalación profesional KEVCA' },
+  { src: '/images/team/01.png', alt: 'Equipo KEVCA Security Protection', pos: 'center 55%' },
+  { src: '/images/team/02.jpg', alt: 'Residencia protegida por KEVCA', pos: 'center center' },
+  { src: '/images/team/03.jpg', alt: 'Cámaras bullet Dahua instaladas', pos: 'center center' },
+  { src: '/images/team/04.jpg', alt: 'Cámaras en poste contra el cielo', pos: 'center 35%' },
+  { src: '/images/team/05.jpg', alt: 'Cerca eléctrica perimetral instalada', pos: 'center bottom' },
+  { src: '/images/team/06.jpg', alt: 'Cámara CCTV en poste exterior', pos: 'center 40%' },
+  { src: '/images/team/07.jpg', alt: 'Cámara PTZ Dahua en poste', pos: 'center 30%' },
+  { src: '/images/team/08.jpg', alt: 'Cámaras domo en pared de piedra', pos: 'center center' },
+  { src: '/images/team/09.jpg', alt: 'Cerca eléctrica en fachada', pos: 'center bottom' },
 ]
 
 export default function Carousel() {
@@ -57,7 +54,7 @@ export default function Carousel() {
               alt={img.alt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              style={{ objectFit: 'cover', objectPosition: img.pos ?? 'center' }}
               priority={i === 0}
             />
           </div>
