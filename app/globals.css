@@ -294,6 +294,25 @@ section { padding: 100px 0; }
   opacity: 0.08;
   z-index: 0;
 }
+/* --- Hero Particles (CSS-only, no canvas) --- */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(79, 195, 247, var(--opacity, 0.4));
+  animation: particleFloat var(--duration, 10s) ease-in-out infinite var(--delay, 0s);
+}
+@keyframes particleFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(var(--tx, 20px), var(--ty, -20px)); }
+}
+
 /* --- Typewriter --- */
 .hero-typed-line {
   font-size: 1.05rem;
