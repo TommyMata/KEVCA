@@ -18,7 +18,7 @@ export default function Nav() {
     setMenuOpen(false)
     const target = document.querySelector(href)
     if (!target) return
-    const navHeight = 72
+    const navHeight = 80
     const top = target.getBoundingClientRect().top + window.scrollY - navHeight
     window.scrollTo({ top, behavior: 'smooth' })
   }, [])

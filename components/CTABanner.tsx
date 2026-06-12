@@ -3,11 +3,11 @@ import { WA_URL_COTIZACION } from '@/lib/constants'
 export default function CTABanner() {
   return (
     <section className="cta-banner">
-      <div className="cta-bg" />
+      <div className="cta-bg"></div>
       <div className="container">
         <div className="cta-inner">
           <div className="cta-text">
-            <h2 className="cta-title">¿Listo para proteger lo que más importa?</h2>
+            <h2 className="cta-title">¿Listo para proteger lo que más te importa?</h2>
             <p className="cta-desc">
               Solicita tu evaluación gratuita hoy. Nuestro equipo está listo para atenderte.
             </p>

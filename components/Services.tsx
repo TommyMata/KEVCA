@@ -1,3 +1,4 @@
+'use client'
 import { Servicio } from '@/types'
 
 const ICON_MAP: Record<string, React.ReactNode> = {
@@ -36,6 +37,12 @@ const ICON_MAP: Record<string, React.ReactNode> = {
 const DELAY_CLASSES = ['reveal-delay-1', 'reveal-delay-2', 'reveal-delay-3', 'reveal-delay-4'] as const
 const getDelay = (i: number) => DELAY_CLASSES[i % DELAY_CLASSES.length]
 
+function onMove(e: React.MouseEvent<HTMLDivElement>) {
+  const r = e.currentTarget.getBoundingClientRect()
+  e.currentTarget.style.setProperty('--mx', `${e.clientX - r.left}px`)
+  e.currentTarget.style.setProperty('--my', `${e.clientY - r.top}px`)
+}
+
 export default function Services({ servicios }: { servicios: Servicio[] }) {
   return (
     <section className="services" id="servicios">
@@ -49,7 +56,7 @@ export default function Services({ servicios }: { servicios: Servicio[] }) {
         </div>
         <div className="services-grid">
           {servicios.map((s, i) => (
-            <div key={s.id} className={`service-card reveal ${getDelay(i)}`}>
+            <div key={s.id} className={`service-card reveal ${getDelay(i)}`} onMouseMove={onMove}>
               <div className="service-icon">
                 {ICON_MAP[s.icono] ?? ICON_MAP.sensor}
               </div>
