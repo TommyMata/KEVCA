@@ -229,7 +229,7 @@ section { padding: 100px 0; }
 }
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 760px;
   width: 100%;
   text-align: center;
@@ -299,14 +299,15 @@ section { padding: 100px 0; }
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
+  z-index: 1;
 }
 .hero-particle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(79, 195, 247, var(--opacity, 0.4));
-  animation: particleFloat var(--duration, 10s) ease-in-out infinite var(--delay, 0s);
+  background: rgba(79, 195, 247, 0.55);
+  opacity: var(--opacity, 0.55);
+  animation: particleFloat var(--duration, 10s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
 }
 @keyframes particleFloat {
   0%, 100% { transform: translate(0, 0); }
